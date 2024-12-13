@@ -1,0 +1,613 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+<title>home page
+</title>
+<style>
+footer {
+        background-color: rgba(51, 51, 51, 0.8);
+        color: lightgrey;
+        text-align: center;
+        padding: 10px;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between; /* Ensures equal spacing between divs */
+        align-items: center; /* Centers items vertically */
+        flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    }
+
+    footer h3 {
+        margin: 10px 0;
+    }
+
+    footer a {
+        color:black; ;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    footer a:hover {
+        color:lightgrey;  /* Change hover color */
+    }
+
+    footer img {
+        width: 10%;
+        transition: transform 0.3s;
+    }
+
+    footer img:hover {
+        transform: scale(1.1);
+    }
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    color: #333;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.product {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 22%;
+    box-sizing: border-box;
+}
+
+.product img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.product h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin: 10px 0;
+}
+
+.product p {
+    font-size: 1.2em;
+    color: #888;
+    margin: 10px 0;
+}
+
+.stars {
+    font-size: 1.2em;
+    color: #f4b400;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+ .product img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 5px;
+            transition: transform 0.3s ease; /* Smooth transition effect */
+        }
+
+        .product img:hover {
+            transform: scale(1.1); /* Scale the image on hover */
+        }
+ .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+width: 10%; /* adjust image width */
+            margin: 10px; /* add margin between images */
+            border-radius: 10px; /* add border radius */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* add box shadow */
+        
+      
+        }
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.circle-image {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 150px; /* adjust the width and height to your desired size */
+  height: 150px;
+  object-fit: cover;
+  border: 2px solid #fff; /* optional border */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* optional shadow */
+}
+
+.circle-image-container {
+  text-align: center;
+}
+
+.circle-image {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 2px solid #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.image-description {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #333;
+
+}
+@keyframes move {
+  0% {
+    transform: translateX(100%);
+    left: 0;
+  }
+  100% {
+    transform: translateX(-100%);
+    left: 100%;
+  }
+}
+
+</style>
+</head>
+
+<body >
+<header style="background-color:black;width:100%;display:flex;justify-content:space-between;align-items:center;padding:10px;position:relative;">
+  <div style="flex:1;text-align:center;">
+    <h1 style="color:grey;font-family:agency FB;"><b>ZENiN Collection</b></h1>
+    <h2 style="color:lightgrey;font-family:agency FB;">STEPPIN'TO ELEGANCE</h2>
+  </div>
+  <div style="display:flex;align-items:center;">
+    <a href="tel:+1234567890" style="color:#fff;text-decoration:none;margin:0 10px;"><i class="fas fa-phone" style="font-size:24px;"></i></a>
+    <a href="#" style="color:#fff;text-decoration:none;margin:0 10px;"><i class="fas fa-shopping-cart" style="font-size:24px;"></i></a>
+  </div>
+  <div style="position:absolute;top:0;left:0;width:100%;background-color:#660000;color:#fff;padding:5px;border-radius:5px;overflow:hidden;">
+    <span style="position:relative;animation:move 10s infinite linear;">Orders above RS.5000 have Free Shipping!</span>
+  </div>
+</header>
+<nav style=" background-color: #333;color: #fff;text-align: center; padding: 10px;">
+        <a style=" color: #fff; text-decoration: none;margin: 0 10px;" href="home.html">Home</a>
+        <a  style=" color: #fff; text-decoration: none;margin: 0 10px;" href="#">Shop</a>
+        <a  style=" color: #fff; text-decoration: none;margin: 0 10px;"  href="About Us.html">About</a>
+        <a  style=" color: #fff; text-decoration: none;margin: 0 10px;" href="Contact Us.html">Contact</a>
+	<a  style=" color: #fff; text-decoration: none;margin: 0 10px;" href="admin.html">Admin</a>
+
+    </nav>
+<section>
+<video controls>
+<source src="vd1.mp4" width="150" >
+</video>
+
+</section>
+
+<div class="circle-image-container" >
+<h1 style="text-align:"center;"> WOMEN CATAGORIES</h1>
+<nav  class="container">
+        <a   style=" color: black; text-decoration: none;margin: 0 10px;" href="lawn.html"><img class="circle-image" src="lw20.jpg" alt="Image 1"><p class="image-description">LAWN COLLECTION</p></a>
+        <a  style=" color: black; text-decoration: none;margin: 0 10px;" href="bride.html"> <img class="circle-image" src="bd18.jpg" alt="Image 1"><p class="image-description">BRIDAL WEAR</p></a>
+        <a  style=" color: black; text-decoration: none;margin: 0 10px;"  href="fragrance.html"><img class="circle-image"  src="pr1.WEBP" alt="Image 1"><p class="image-description">FRAGRANCES</p></a>
+        <a  style=" color:black ; text-decoration: none;margin: 0 10px;" href="Bags.html"><img class="circle-image" src="bg1.WEBP" alt="Image 1"><p class="image-description">BAGS</p></a>
+	 <a  style=" color: black; text-decoration: none;margin: 0 10px;" href="Trousers.html"><img class="circle-image" src="trlogo.WEBP" alt="Image 1"><p class="image-description">TROUSERS</p></a>
+    </nav>
+
+
+</div>
+
+   <h1>READY TO  WEAR</h1>
+
+<div class="product-grid">
+<div class="product">
+                <img src="hm1.jpg" alt="Product 5">
+                <h2 style="text-align:center;color:black;font-family:slab serif;">3 Piece Embroided Masoori Suit</h2>
+                <p>$29.99</p>
+                <div class="stars">★★★☆☆</div>
+            </div>
+           
+	
+	 <div class="product">
+                <img src="hm30.jpg" alt="Product 6">
+               <h2 style="text-align:center;color:black;font-family:slab serif;">3 Piece Embroided Masoori Sui</h2>
+                <p>$39.99</p>
+                <div class="stars">★★★★★</div>
+            </div>
+	 <div class="product">
+                <img src="hm31.jpg" alt="Product 6">
+               <h2 style="text-align:center;color:black;font-family:slab serif;">3 Piece Embroided Masoori Sui</h2>
+                <p>$39.99</p>
+                <div class="stars">★★★★★</div>
+            </div>
+	 <div class="product">
+                <img src="hm32.jpg" alt="Product 6">
+               <h2 style="text-align:center;color:black;font-family:slab serif;">3 Piece Embroided Masoori Sui</h2>
+                <p>$39.99</p>
+                <div class="stars">★★★★★</div>
+            </div>
+ <div class="product">
+                <img src="hm50.jpg" alt="Product 6">
+               <h2 style="text-align:center;color:black;font-family:slab serif;">3 Piece Embroided Masoori Sui</h2>
+                <p>$39.99</p>
+                <div class="stars">★★★★★</div>
+            </div>
+ <div class="product">
+                <img src="hm51.jpg" alt="Product 6">
+               <h2 style="text-align:center;color:black;font-family:slab serif;">3 Piece Embroided Masoori Sui</h2>
+                <p>$39.99</p>
+                <div class="stars">★★★★★</div>
+            </div>
+ <div class="product">
+                <img src="hm52.jpg" alt="Product 6">
+               <h2 style="text-align:center;color:black;font-family:slab serif;">3 Piece Embroided Masoori Sui</h2>
+                <p>$39.99</p>
+                <div class="stars">★★★★★</div>
+            </div>
+ <div class="product">
+                <img src="hm53.jpg" alt="Product 6">
+               <h2 style="text-align:center;color:black;font-family:slab serif;">3 Piece Embroided Masoori Sui</h2>
+                <p>$39.99</p>
+                <div class="stars">★★★★★</div>
+            </div>
+ <div class="product">
+                <img src="hm54.jpg" alt="Product 6">
+               <h2 style="text-align:center;color:black;font-family:slab serif;">3 Piece Embroided Masoori Sui</h2>
+                <p>$39.99</p>
+                <div class="stars">★★★★★</div>
+            </div>
+ <div class="product">
+                <img src="hm55.jpg" alt="Product 6">
+               <h2 style="text-align:center;color:black;font-family:slab serif;">3 Piece Embroided Masoori Sui</h2>
+                <p>$39.99</p>
+                <div class="stars">★★★★★</div>
+            </div>
+ <div class="product">
+                <img src="hm33.jpg" alt="Product 6">
+               <h2 style="text-align:center;color:black;font-family:slab serif;">3 Piece Embroided Masoori Sui</h2>
+                <p>$39.99</p>
+                <div class="stars">★★★★★</div>
+            </div>
+ <div class="product">
+                <img src="hm34.jpg" alt="Product 6">
+               <h2 style="text-align:center;color:black;font-family:slab serif;">2 Piece Lawn Suit-embroided</h2>
+                <p>$39.99</p>
+                <div class="stars">★★★★★</div>
+            </div>
+            <div class="product">
+                <img src="hm3.jpg" alt="Product 7">
+                <h2 style="text-align:center;color:black;font-family:slab serif;">2 Piece Lawn Suit-embroided</h2>
+                <p>$49.99</p>
+                <div class="stars">★★★★☆</div>
+            </div>
+            
+	<div class="product">
+                <img src="hm4.jpg" alt="Product 8">
+                <h2 style="text-align:center;color:black;font-family:slab serif;">2 Piece Lawn Suit-embroided</h2>
+                <p>$59.99</p>
+                <div class="stars">★★★★☆</div>
+            </div>
+	<div class="product">
+                <img src="hm5.jpg" alt="Product 8">
+                <h2 style="text-align:center;color:black;font-family:slab serif;">Silk Saree</h2>
+                <p>$59.99</p>
+                <div class="stars">★★★★☆</div>
+            </div>
+	<div class="product">
+                <img src="hm6.jpg" alt="Product 8">
+                <h2 style="text-align:center;color:black;font-family:slab serif;">Silk Saree</h2>
+                <p>$59.99</p>
+                <div class="stars">★★★★☆</div>
+            </div>
+	<div class="product">
+                <img src="hm7.jpg" alt="Product 8">
+                <h2 style="text-align:center;color:black;font-family:slab serif;">Silk Saree</h2>
+                <p>$59.99</p>
+                <div class="stars">★★★★☆</div>
+            </div>
+	<div class="product">
+                <img src="hm8.jpg" alt="Product 8">
+                <h2 style="text-align:center;color:black;font-family:slab serif;">3 Piece Embroided Valvet</h2>
+                <p>$59.99</p>
+                <div class="stars">★★★★☆</div>
+            </div>
+		<div class="product">
+                <img src="lw44.jpg" alt="Product 5">
+                <h2 style="text-align:center;color:black;font-family:slab serif;">2 Piece Lawn Suit-embroided</h2>
+                <p>$29.99</p>
+                <div class="stars">★★★☆☆</div>
+            </div>
+            <div class="product">
+                <img src="lw10.WEBP" alt="Product 6">
+               <h2 style="text-align:center;color:black;font-family:slab serif;">2 Piece Lawn Suit-embroided</h2>
+                <p>$39.99</p>
+                <div class="stars">★★★★★</div>
+            </div>
+            <div class="product">
+                <img src="lw11.WEBP" alt="Product 7">
+                <h2 style="text-align:center;color:black;font-family:slab serif;">2 Piece Lawn Suit-embroided</h2>
+                <p>$49.99</p>
+                <div class="stars">★★★★☆</div>
+            </div>
+            <div class="product">
+                <img src="lw12.WEBP" alt="Product 8">
+                <h2 style="text-align:center;color:black;font-family:slab serif;">2 Piece Lawn Suit-embroided</h2>
+                <p>$59.99</p>
+                <div class="stars">★★★★☆</div>
+            </div>
+            <div class="product">
+                <img src="lw13.WEBP" alt="Product 9">
+              <h2 style="text-align:center;color:black;font-family:slab serif;">2 Piece Lawn Suit-embroided</h2>
+                <p>$29.99</p>
+                <div class="stars">★★★☆☆</div>
+            </div>
+            <div class="product">
+                <img src="lw14.WEBP" alt="Product 10">
+              <h2 style="text-align:center;color:black;font-family:slab serif;">2 Piece Lawn Suit-embroided</h2>
+                <p>$39.99</p>
+                <div class="stars">★★★★★</div>
+            </div>
+            <div class="product">
+                <img src="lw15.WEBP" alt="Product 11">
+               <h2 style="text-align:center;color:black;font-family:slab serif;">2 Piece Lawn Suit-embroided</h2>
+                <p>$49.99</p>
+                <div class="stars">★★★★☆</div>
+            </div>
+            <div class="product">
+                <img src="lw16.WEBP" alt="Product 12">
+                <h2 style="text-align:center;color:black;font-family:slab serif;">2 Piece Lawn Suit-embroided</h2>
+                <p>$59.99</p>
+                <div class="stars">★★★★☆</div>
+            </div>
+            <div class="product">
+                <img src="lw17.WEBP" alt="Product 13">
+                <h2 style="text-align:center;color:black;font-family:slab serif;">2 Piece Lawn Suit-embroided</h2>
+                <p>$29.99</p>
+                <div class="stars">★★★☆☆</div>
+            </div>
+            <div class="product">
+                <img src="lw19.WEBP" alt="Product 14">
+              <h2 style="text-align:center;color:black;font-family:slab serif;">2 Piece Lawn Suit-embroided</h2>
+                <p>$39.99</p>
+                <div class="stars">★★★★★</div>
+            </div>
+            <div class="product">
+                <img src="lw30.jpg" alt="Product 15">
+             <h2 style="text-align:center;color:black;font-family:slab serif;">2 Piece Lawn Suit-embroided</h2>
+                <p>$49.99</p>
+                <div class="stars">★★★★☆</div>
+            </div>
+
+
+
+
+
+            <div class="product">
+                <img src="bd1.JPG" alt="Product 1" style="width: 100%; height: auto; object-fit: cover; border-radius: 5px; transition: transform 0.3s ease;">
+                <h2 style="text-align:center;color:black;font-family:slab serif;" >2 Piece Lawn Suit-embroided</h2>
+                <p>$29.99</p>
+                <div class="stars">★★★★☆</div>
+            </div>
+            <div class="product">
+                <img src="bd2.jpg" alt="Product 2">
+                <h2 style="text-align:center;color:black;font-family:slab serif;">2 Piece Lawn Suit-embroided</h2>
+                <p>$39.99</p>
+                <div class="stars">★★★★★</div>
+            </div>
+            <div class="product">
+                <img src="bd3.jpg" alt="Product 3">
+               <h2 style="text-align:center;color:black;font-family:slab serif;">2 Piece Lawn Suit-embroided</h2>
+                <p>$49.99</p>
+                <div class="stars">★★★☆☆</div>
+            </div>
+            <div class="product">
+                <img src="bd4.jpg" alt="Product 4">
+               <h2 style="text-align:center;color:black;font-family:slab serif;">2 Piece Lawn Suit-embroided</h2>
+                <p>$59.99</p>
+                <div class="stars">★★★★☆</div>
+            </div>
+            <!-- Repeat the above block for each additional product (total 16 products) -->
+            <div class="product">
+                <img src="bd5.jpg" alt="Product 5">
+                <h2 style="text-align:center;color:black;font-family:slab serif;">2 Piece Lawn Suit-embroided</h2>
+                <p>$29.99</p>
+                <div class="stars">★★★☆☆</div>
+            </div>
+            <div class="product">
+                <img src="bd6.jpg" alt="Product 6">
+               <h2 style="text-align:center;color:black;font-family:slab serif;">2 Piece Lawn Suit-embroided</h2>
+                <p>$39.99</p>
+                <div class="stars">★★★★★</div>
+            </div>
+            <div class="product">
+                <img src="bd7.jpg" alt="Product 7">
+                <h2 style="text-align:center;color:black;font-family:slab serif;">2 Piece Lawn Suit-embroided</h2>
+                <p>$49.99</p>
+                <div class="stars">★★★★☆</div>
+            </div>
+            <div class="product">
+                <img src="bd9.jpg" alt="Product 8">
+                <h2 style="text-align:center;color:black;font-family:slab serif;">2 Piece Lawn Suit-embroided</h2>
+                <p>$59.99</p>
+                <div class="stars">★★★★☆</div>
+            </div>
+            <div class="product">
+                <img src="bd23.jpg" alt="Product 9">
+              <h2 style="text-align:center;color:black;font-family:slab serif;">2 Piece Lawn Suit-embroided</h2>
+                <p>$29.99</p>
+                <div class="stars">★★★☆☆</div>
+            </div>
+            <div class="product">
+                <img src="bd11.jpg" alt="Product 10">
+              <h2 style="text-align:center;color:black;font-family:slab serif;">2 Piece Lawn Suit-embroided</h2>
+                <p>$39.99</p>
+                <div class="stars">★★★★★</div>
+            </div>
+            <div class="product">
+                <img src="bd12.jpg" alt="Product 11">
+               <h2 style="text-align:center;color:black;font-family:slab serif;">2 Piece Lawn Suit-embroided</h2>
+                <p>$49.99</p>
+                <div class="stars">★★★★☆</div>
+            </div>
+            <div class="product">
+                <img src="bd13.jpg" alt="Product 12">
+                <h2 style="text-align:center;color:black;font-family:slab serif;">2 Piece Lawn Suit-embroided</h2>
+                <p>$59.99</p>
+                <div class="stars">★★★★☆</div>
+            </div>
+            <div class="product">
+                <img src="bd14.jpg" alt="Product 13">
+                <h2 style="text-align:center;color:black;font-family:slab serif;">2 Piece Lawn Suit-embroided</h2>
+                <p>$29.99</p>
+                <div class="stars">★★★☆☆</div>
+            </div>
+            <div class="product">
+                <img src="bd22.jpg" alt="Product 14">
+              <h2 style="text-align:center;color:black;font-family:slab serif;">2 Piece Lawn Suit-embroided</h2>
+                <p>$39.99</p>
+                <div class="stars">★★★★★</div>
+            </div>
+<div class="product">
+                <img src="bd19.jpg" alt="Product 14">
+              <h2 style="text-align:center;color:black;font-family:slab serif;">2 Piece Lawn Suit-embroided</h2>
+                <p>$39.99</p>
+                <div class="stars">★★★★★</div>
+            </div>
+<div class="product">
+                <img src="bd28.jpg" alt="Product 14">
+              <h2 style="text-align:center;color:black;font-family:slab serif;">2 Piece Lawn Suit-embroided</h2>
+                <p>$39.99</p>
+                <div class="stars">★★★★★</div>
+            </div>
+<div class="product">
+                <img src="bd16.jpg" alt="Product 14">
+              <h2 style="text-align:center;color:black;font-family:slab serif;">2 Piece Lawn Suit-embroided</h2>
+                <p>$39.99</p>
+                <div class="stars">★★★★★</div>
+            </div>
+<div class="product">
+                <img src="bd29.jpg" alt="Product 14">
+              <h2 style="text-align:center;color:black;font-family:slab serif;">2 Piece Lawn Suit-embroided</h2>
+                <p>$39.99</p>
+                <div class="stars">★★★★★</div>
+            </div>
+            <div class="product">
+                <img src="bd24.jpg" alt="Product 15">
+             <h2 style="text-align:center;color:black;font-family:slab serif;">2 Piece Lawn Suit-embroided</h2>
+                <p>$49.99</p>
+                <div class="stars">★★★★☆</div>
+            </div>
+            <div class="product">
+                <img src="bd17.jpg" alt="Product 16">
+               <h2 style="text-align:center;color:black;font-family:slab serif;">2 Piece Lawn Suit-embroided</h2>
+                <p>$59.99</p>
+                <div class="stars">★★★★☆</div>
+            </div>
+<div class="product">
+                <img src="hm40.jpg" alt="Product 6">
+               <h2 style="text-align:center;color:black;font-family:slab serif;">3 Piece Embroided Masoori Sui</h2>
+                <p>$39.99</p>
+                <div class="stars">★★★★★</div>
+            </div>
+ <div class="product">
+                <img src="hm41.jpg" alt="Product 6">
+               <h2 style="text-align:center;color:black;font-family:slab serif;">3 Piece Embroided Masoori Sui</h2>
+                <p>$39.99</p>
+                <div class="stars">★★★★★</div>
+            </div>
+ <div class="product">
+                <img src="hm42.jpg" alt="Product 6">
+               <h2 style="text-align:center;color:black;font-family:slab serif;">3 Piece Embroided Masoori Sui</h2>
+                <p>$39.99</p>
+                <div class="stars">★★★★★</div>
+            </div>
+ <div class="product">
+                <img src="hm43.jpg" alt="Product 6">
+               <h2 style="text-align:center;color:black;font-family:slab serif;">Grip Shirt Dyed</h2>
+                <p>$39.99</p>
+                <div class="stars">★★★★★</div>
+            </div>
+ <div class="product">
+                <img src="hm44.jpg" alt="Product 6">
+               <h2 style="text-align:center;color:black;font-family:slab serif;">3 Piece Embroided Masoori Sui</h2>
+                <p>$39.99</p>
+                <div class="stars">★★★★★</div>
+            </div>
+ <div class="product">
+                <img src="hm48.jpg" alt="Product 6">
+               <h2 style="text-align:center;color:black;font-family:slab serif;">3 Piece Embroided Masoori Sui</h2>
+                <p>$39.99</p>
+                <div class="stars">★★★★★</div>
+            </div>
+ <div class="product">
+                <img src="hm49.jpg" alt="Product 6">
+               <h2 style="text-align:center;color:black;font-family:slab serif;">3 Piece printed Pret</h2>
+                <p>$39.99</p>
+                <div class="stars">★★★★★</div>
+            </div>
+        </div>
+    </div>
+<footer>
+<div style="text-align: center;">
+        <h3 style="font-family:Bodoni MT Black; color:black;">Follow Us On </h3>
+        <a href="https://www.facebook.com"><img src="f.jpg" alt="Facebook"></a>
+        <a href="https://www.twitter.com"><img src="ii.JPG" alt="Twitter"></a>
+        <a href="https://www.youtube.com"><img src="y.JPG" alt="YouTube"></a>
+        <a href="https://www.instagram.com"><img src="i.JPG" alt="Instagram"></a>
+        <a href="https://www.whatsapp.com"><img src="w.JPG" alt="Whatsapp"></a>
+    </div>
+    <div style="width:50%;text-align:center">
+        <h3 style="font-family:Bodoni MT Black; color:black;"> CUSTOMER CARE</h3>
+        <a href="privacypolicy.html">Privacy Policy</a><br>
+        <a href="ordercancellationpolicy.html">Order Cancellation Policy</a><br>
+        <a href="exchangepolicy.html">Exchange Policy</a><br>
+    </div>
+    <div style="width:50%;text-align:center">
+        <h3 style="font-family:Bodoni MT Black; color:black;"> INFORMATION</h3>
+        <a href="career.html">Career</a><br>
+        <a href="About Us.html">About Us</a><br>
+    </div>
+    
+</footer>
+
+
+
+
+</body>
+
+</html>
